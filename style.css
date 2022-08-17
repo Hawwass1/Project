@@ -3,8 +3,8 @@
 }
 
 body{
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   background-color: whitesmoke;
 }
 .header {
@@ -13,13 +13,14 @@ body{
   max-height: 50%;
 } 
 .navigation{
-  padding-top:30px;
-  padding-bottom:20px;
+  margin-top: 0%;
+  padding-top:20px;
+  padding-bottom:10px;
   position:absolute;
   top:0;
   width:100%;
   z-index:1;
-  background-color: rgba(0,0,0,0.3); /** Change value according to you transperncy**/
+  background-color: rgba(0,0,0,0.08);
 }
 .navbar-right{
   float:right;
@@ -28,21 +29,12 @@ body{
 .navbar-right a{
   text-decoration:none;
   padding:10px;
-  color: #fff;
-  font-family:Arial;
-  font-weight:900;
+  color:black;
+  font-family:lucida calligraphy;
 }
   
 .navbar-right a:hover{
   text-decoration:underline;
-}
-.navbar-logo{
-  padding-left:10%;
-  font-family:Arial;
-  font-size:30px;
-  font-weight:bold;
-  text-decoration:none;
-  color:#fff; 
 }
 .video-container {
   z-index: -100;
