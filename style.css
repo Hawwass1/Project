@@ -107,5 +107,22 @@ h1{
   /* 75%{background-image: url(assets/Tay-Iwar.webp);} */
 }
 
+.Images {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  grid-column-gap: 50px;
+  grid-row-gap: 5px;
+
+}
+
+img {
+  width: 350px;
+  height: auto;
+  margin-top: 20px;
+}
+
 
 
