@@ -6,29 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="header">
           <nav class="navigation">
             <div class="navbar-right">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Gallery</a>
-              <a href="#">Albums</a>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#it">Albums</a>
+              <a href="#quiz">Quiz</a>
             </div>
           </nav>
           <div class="video-container">
-           <!-- <div class="vidtext">
-            <p>TAY IWAR</p>
-           </div> -->
+           
             <video autoplay loop muted id="video">
               <source src="Assets/Tay Iwar Live Performance_Trim.mp4" type="video/mp4">      
             </video>
           </div>
         </div>
+        <div class="vidtext">
+          <p>Hi, <span class="auto-type"></span></p>
+         </div>
     </header>
-    <main>
+    <main id="about">
       <h1>Who is Tay Iwar?</h1>
       <div class="container">
         <div class="text-container">
@@ -42,7 +48,7 @@
       
                  
     </main>
-    <div class="Gallery">
+    <div class="Gallery" id="gallery">
       <h1>Gallery</h1>
       <div class="Images">
         <img src="Assets/tayiwar-Gallery/image9.jpg" alt="Tay Iwar's Photos" style="grid-column: 1 / 3; grid-row: 4 / 6; ">
@@ -58,7 +64,142 @@
         <img src="Assets/tayiwar-Gallery/image3.jpg" alt="Tay Iwar's Photos">
       </div>
     </div>
+
+    <!-- Albums -->
+
+    <div onmouseleave="dr()" id="it" class="album-div">
+      <h1>Albums</h1>
+      <div class="album">
+        <!-- first album -->
+        <div id="first-album"  class="rel" style="grid-column: 1 / 3; grid-row: 2 / 3; ">
+          <img src="AlbumImg/firstAblum.jpg" alt="">
+          <i onclick="drop()" class="fa-sharp fa-solid fa-circle-play">
+              <!--  -->
+                <div id="icon1" class="menu">
+                  <span class="selected">Listen On!</span>
+                  <ul>
+                    <li><a href="https://soundcloud.com/taygoldmusic/sets/music-for-the-soul?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Click here to listen on soundcloud</a></li>
+                    <li><a href="https://open.spotify.com/album/6lGftkhFewTcopQuLZfHzl?si=VsVyPc1cSPm3-uKTdHODrw" target="_blank">Click here to listen on spotify</a></li>
+                    <li><a href="https://music.apple.com/ng/album/gold/1488526676" target="_blank">Click here to listen on Apple Music</a></li>
+                  </ul>
+                </div> 
+             <!--  -->
+          </i>
+          <div class="icon">
+            <i id="like1" onclick="likee()" class="fa-sharp fa-solid fa-heart"></i>
+          </div>
+          <div class="album-text">
+            <h3>Gold</h3>
+            <h6>Released on 13/12/2019</h6>
+          </div>
+        </div>
+        <!-- second album -->
+        <div id="second-album" class="rel" >
+          <img src="AlbumImg/secondAlbum.jpg" alt="">
+          <i onclick="drop2()" class="fa-sharp fa-solid fa-circle-play">
+             <!--  -->
+             <div id="icon2" class="menu">
+              <span class="selected">Listen On!</span>
+              <ul>
+                <li><a href="https://soundcloud.com/tayiwar/08-utero?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Click here to listen on soundcloud</a></li>
+                <li><a href="https://open.spotify.com/playlist/2XWTgyl21t7awJf9ixNHSy?si=O-s97dR_Qky0aahA__cKZg" target="_blank">Click here to listen on spotify</a></li>
+                <li><a href="https://music.apple.com/ng/album/gemini/1454635444" target="_blank">Click here to listen on Apple Music</a></li>
+              </ul>
+            </div> 
+         <!--  -->
+          </i>
+          <div class="icon">
+            <i id="like2" onclick="likeeii()" class="fa-sharp fa-solid fa-heart"></i>
+          </div>
+          <div class="album-text">
+            <h3>Gemini</h3>
+            <h6>Released on 29/03/2019</h6>
+          </div>
+        </div>
+        <!-- third album -->
+        <div id="third-album" class="rel" >
+          <img src="AlbumImg/thirdAlbum.jpg" alt="">
+          <i onclick="drop3()" class="fa-sharp fa-solid fa-circle-play">
+             <!--  -->
+             <div id="icon3" class="menu">
+              <span class="selected">Listen On!</span>
+              <ul>
+                <li><a href="https://soundcloud.com/tayiwar/sets/renascentia?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Click here to listen on soundcloud</a></li>
+                <li><a href="https://open.spotify.com/album/5R7cUADCzBIPUfq0hrSv2N?si=gfElQmPOT8aBPdlNP4pvSg" target="_blank">Click here to listen on spotify</a></li>
+                <li><a href="https://music.apple.com/ng/album/renascentia/1554014434" target="_blank">Click here to listen on Apple Music</a></li>
+              </ul>
+            </div> 
+         <!--  -->
+          </i>
+          <div class="icon">
+            <i id="like3" onclick="likeeiii()" class="fa-sharp fa-solid fa-heart"></i>
+          </div>
+          <div class="album-text">
+            <h3>Renascentia</h3>
+            <h6>Released on 22/04/2016</h6>
+          </div>
+        </div>
+        <!-- fourth album -->
+        <div id="fourth-album" class="rel" >
+          <img src="AlbumImg/fourthAlbum.jpg" alt="">
+          <i onclick="drop4()" class="fa-sharp fa-solid fa-circle-play">
+             <!--  -->
+             <div id="icon4" class="menu">
+              <span class="selected">Listen On!</span>
+              <ul>
+                <li><a href="https://soundcloud.com/eclecticwax/sets/tay-passport-mixtape?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Click here to listen on soundcloud</a></li>
+                <li><a href="https://open.spotify.com/album/5pQXeCuA6l4kmhWzh4lsig?si=UGZOvIAFRkCQ76JVUd3MGQ" target="_blank">Click here to listen on spotify</a></li>
+                <li><a href="https://music.apple.com/ng/album/passport/1555363644" target="_blank">Click here to listen on Apple Music</a></li>
+              </ul>
+            </div> 
+         <!--  -->
+          </i>
+          <div class="icon">
+            <i id="like4" onclick="likeeiv()" class="fa-sharp fa-solid fa-heart"></i>
+          </div>
+          <div class="album-text">
+            <h3>Passport</h3>
+            <h6>Released on 22/04/2014</h6>
+          </div>
+        </div>
+        <!-- fifth album -->
+        <div id="firth-album" class="rel" >
+          <img src="AlbumImg/fifthAlbum.jpg" alt="">
+          <i onclick="drop5()" class="fa-sharp fa-solid fa-circle-play">
+             <!--  -->
+             <div id="icon5" class="menu">
+              <span class="selected">Listen On!</span>
+              <ul>
+                <li><a href="https://soundcloud.com/tayiwar/sets/love-isolation?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Click here to listen on soundcloud</a></li>
+                <li><a href="https://open.spotify.com/album/4sMkAZXTXdtFikLhLqviyZ?si=H1mHzUNKTSeRHZ8Xa_ctAw" target="_blank">Click here to listen on spotify</a></li>
+                <li><a href="https://music.apple.com/ng/album/love-isolation-ep/1558889287" target="_blank">Click here to listen on Apple Music</a></li>
+              </ul>
+            </div> 
+         <!--  -->
+          </i>
+          <div class="icon">
+            <i id="like5" onclick="likeev()" class="fa-sharp fa-solid fa-heart"></i>
+          </div>
+          <div class="album-text">
+            <h3>Love & Isolation</h3>
+            <h6>Released on 16/04/2021</h6>  
+          </div>
+        </div>
+      </div>
+    </div>
     
-    
+    <div class="quizz" id="quiz">
+      <h1>Quiz</h1>
+    </div>
+<script src="https://cdn.jsdelvr.net/npm/typed.js@2.0.12"></script>  
+<script>
+    var typed = new Typed(".auto-type", {
+    strings: ["I am Tay Iwar", "Welcome to my Page..."],
+    typeSpeed: 150,
+    backSpeed: 180,
+    loop: true
+  })
+</script> 
+<script src="script.js"></script>
 </body>
 </html>
